@@ -32,7 +32,7 @@ const EditCompaing = ({onLogout}) => {
     // Gửi yêu cầu lấy thông tin chiến dịch theo id
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/campaign/${id}`);
+        const response = await axios.get(`https://roller-ads-app-247fc36661ce.herokuapp.com/campaign/${id}`);
         setCampaign_data(response.data);
         console.log(response.data);
         setFormat(response.data.format);
@@ -258,7 +258,7 @@ const EditCompaing = ({onLogout}) => {
     formData.append("selectedPlatforms", selectedPlatforms);
     //formData.append("email", email);
     try {
-      const response = await axios.post('http://localhost:3000/edit-campaign', formData, {
+      const response = await axios.post('https://roller-ads-app-247fc36661ce.herokuapp.com/edit-campaign', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

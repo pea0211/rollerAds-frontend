@@ -9,7 +9,7 @@ const AdminUser = ({onLogout}) => {
     // Lấy danh sách người dùng từ backend
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/admin_user");
+        const response = await axios.get("https://roller-ads-app-247fc36661ce.herokuapp.com/admin_user");
         setUsers(response.data);
       } catch (error) {
         console.error("Failed to fetch users:", error);

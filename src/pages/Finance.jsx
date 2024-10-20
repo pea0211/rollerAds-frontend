@@ -43,7 +43,7 @@ const Finance = ({onLogout}) => {
     // Lấy danh sách chiến dịch từ backend
     const fetchUserTransactions = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/user-transaction/${email}`);
+        const response = await axios.get(`https://roller-ads-app-247fc36661ce.herokuapp.com/user-transaction/${email}`);
         setUserTransactions(response.data);
       } catch (error) {
         console.error("Failed to fetch transactions:", error);
@@ -76,7 +76,7 @@ const Finance = ({onLogout}) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3000/new-transaction", {
+      const response = await axios.post("https://roller-ads-app-247fc36661ce.herokuapp.com/new-transaction", {
         email,
         paymentMethod,
         amount,

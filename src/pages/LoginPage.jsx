@@ -52,7 +52,7 @@ const LoginPage = ({ onLogin }) => {
 
     if (Object.keys(newErrors1).length === 0) {
       try {
-        const response = await axios.post("http://localhost:3000/signup", {
+        const response = await axios.post("https://roller-ads-app-247fc36661ce.herokuapp.com/signup", {
           email,
           password,
           firstName,
@@ -80,7 +80,7 @@ const LoginPage = ({ onLogin }) => {
     setErrors(newErrors);
     if (Object.keys(newErrors).length === 0) {
       try {
-        const response = await axios.post("http://localhost:3000/login", {
+        const response = await axios.post("https://roller-ads-app-247fc36661ce.herokuapp.com/login", {
           email_login,
           password_login,
         });

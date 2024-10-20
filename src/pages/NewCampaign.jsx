@@ -215,7 +215,7 @@ const NewCampaign = ({onLogout}) => {
     formData.append("selectedPlatforms", selectedPlatforms);
     formData.append("email", email);
     try {
-      const response = await axios.post('http://localhost:3000/new-campaign', formData, {
+      const response = await axios.post('https://roller-ads-app-247fc36661ce.herokuapp.com/new-campaign', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

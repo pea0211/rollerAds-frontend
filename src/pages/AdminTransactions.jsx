@@ -12,7 +12,7 @@ const AdminTransactions = ({onLogout}) => {
     // Lấy danh sách chiến dịch từ backend
     const fetchTransactions = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/admin_transaction");
+        const response = await axios.get("https://roller-ads-app-247fc36661ce.herokuapp.com/admin_transaction");
         setTransactions(response.data);
       } catch (error) {
         console.error("Failed to fetch transactions:", error);
@@ -41,7 +41,7 @@ const AdminTransactions = ({onLogout}) => {
 
   const handleSave = async (Id) => {
     try {
-      const response = await axios.post(`http://localhost:3000/admin-update-transaction/${Id}`, editedData);
+      const response = await axios.post(`https://roller-ads-app-247fc36661ce.herokuapp.com/admin-update-transaction/${Id}`, editedData);
       // Cập nhật dữ liệu trong state
       console.log(response.data);
       alert(response.data.message);
