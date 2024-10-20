@@ -42,7 +42,9 @@ const CompainContainer = () => {
     console.log(localStorage.getItem("userEmail"));
     const fetchCampaigns = async () => {
       try {
-        const response = await axios.get(`https://roller-ads-app-247fc36661ce.herokuapp.com/user-campaign/${userEmail}`);
+        const response = await axios.get(`https://roller-ads-app-247fc36661ce.herokuapp.com/user-campaign/${userEmail}`, {
+          withCredentials: true // Thêm thông tin xác thực vào yêu cầu
+        });
         console.log(response.data);
         setCampaignsData(response.data);
         setFilteredData(response.data); // Khởi tạo dữ liệu lọc

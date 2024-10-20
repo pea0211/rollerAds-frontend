@@ -43,7 +43,9 @@ const Finance = ({onLogout}) => {
     // Lấy danh sách chiến dịch từ backend
     const fetchUserTransactions = async () => {
       try {
-        const response = await axios.get(`https://roller-ads-app-247fc36661ce.herokuapp.com/user-transaction/${email}`);
+        const response = await axios.get(`https://roller-ads-app-247fc36661ce.herokuapp.com/user-transaction/${email}`, {
+          withCredentials: true // Thêm thông tin xác thực vào yêu cầu
+        });
         setUserTransactions(response.data);
       } catch (error) {
         console.error("Failed to fetch transactions:", error);
@@ -83,6 +85,8 @@ const Finance = ({onLogout}) => {
         transactionId,
         paymentNote,
         walletId,
+      },{
+          withCredentials: true // Thêm thông tin xác thực vào yêu cầu        
       });
       alert(response.data.message);
       setActiveTab("History");

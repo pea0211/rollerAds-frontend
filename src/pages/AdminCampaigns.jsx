@@ -12,7 +12,9 @@ const AdminCampaigns = ({onLogout}) => {
     // Lấy danh sách chiến dịch từ backend
     const fetchCampaigns = async () => {
       try {
-        const response = await axios.get("https://roller-ads-app-247fc36661ce.herokuapp.com/admin_campaign");
+        const response = await axios.get("https://roller-ads-app-247fc36661ce.herokuapp.com/admin_campaign", {
+          withCredentials: true // Thêm thông tin xác thực vào yêu cầu
+        });
         setCampaigns(response.data);
       } catch (error) {
         console.error("Failed to fetch campaigns:", error);
@@ -45,7 +47,9 @@ const AdminCampaigns = ({onLogout}) => {
 
   const handleSave = async (campaignId) => {
     try {
-      const response = await axios.post(`https://roller-ads-app-247fc36661ce.herokuapp.com/admin-update-campaign/${campaignId}`, editedData);
+      const response = await axios.post(`https://roller-ads-app-247fc36661ce.herokuapp.com/admin-update-campaign/${campaignId}`, editedData, {
+        withCredentials: true // Thêm thông tin xác thực vào yêu cầu
+      });
       // Cập nhật dữ liệu trong state
       console.log(response.data);
       alert(response.data.message);

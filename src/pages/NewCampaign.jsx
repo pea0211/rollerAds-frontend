@@ -219,6 +219,7 @@ const NewCampaign = ({onLogout}) => {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
+        withCredentials: true // Thêm thông tin xác thực vào yêu cầu
       });
       alert(response.data.message);
       navigate('/campaigns');

@@ -61,6 +61,8 @@ const LoginPage = ({ onLogin }) => {
           city,
           address,
           phone,
+        }, {
+          withCredentials: true // Thêm thông tin xác thực vào yêu cầu
         });
         alert(response.data.message);
         setActiveTab("Login");
@@ -83,6 +85,8 @@ const LoginPage = ({ onLogin }) => {
         const response = await axios.post("https://roller-ads-app-247fc36661ce.herokuapp.com/login", {
           email_login,
           password_login,
+        }, {
+          withCredentials: true // Thêm thông tin xác thực vào yêu cầu
         });
         //alert(response.data.message);
 

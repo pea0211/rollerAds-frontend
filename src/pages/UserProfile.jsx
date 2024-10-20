@@ -33,7 +33,9 @@ const UserProfile = ({onLogout}) => {
     // Gửi yêu cầu lấy thông tin người dùng
     const fetchUserData = async () => {
       try {
-        const response = await axios.get(`https://roller-ads-app-247fc36661ce.herokuapp.com/user-profile/${userEmail}`);
+        const response = await axios.get(`https://roller-ads-app-247fc36661ce.herokuapp.com/user-profile/${userEmail}`, {
+          withCredentials: true // Thêm thông tin xác thực vào yêu cầu
+        });
         setUserData(response.data);
       } catch (error) {
         console.error("Error fetching user data:", error);
@@ -72,6 +74,8 @@ const UserProfile = ({onLogout}) => {
         email: userEmail,
         oldPassword,
         newPassword
+      }, {
+        withCredentials: true // Thêm thông tin xác thực vào yêu cầu
       });
 
       alert(response.data.message); // Hiển thị thông báo thành công
@@ -84,7 +88,9 @@ const UserProfile = ({onLogout}) => {
   const handleSaveProfile = async () => {
     try {
       //userData.email = userEmail;
-      const response = await axios.post("https://roller-ads-app-247fc36661ce.herokuapp.com/update-profile", userData);
+      const response = await axios.post("https://roller-ads-app-247fc36661ce.herokuapp.com/update-profile", userData, {
+        withCredentials: true // Thêm thông tin xác thực vào yêu cầu
+      });
       alert(response.data.message);
     } catch (error) {
       console.error("Error updating profile:", error);
