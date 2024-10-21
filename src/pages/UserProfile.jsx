@@ -74,7 +74,7 @@ const UserProfile = ({onLogout}) => {
       const response = await axios.post("https://roller-ads-app-247fc36661ce.herokuapp.com/change-password", {
         email: userEmail,
         oldPassword,
-        newPassword
+        newPassword,
       }, {
         withCredentials: true // Thêm thông tin xác thực vào yêu cầu
       });
