@@ -186,7 +186,7 @@ const Finance = ({onLogout}) => {
                     <p style={styles.walletAddress}>{tronWalletAddress}</p>
                   </div>
                   <div style={styles.walletSection}>
-                    <label htmlFor="walletId">Enter your Wallet ID (for the first time):</label>
+                    <label htmlFor="walletId">Enter your Wallet ID:</label>
                     <input
                       type="text"
                       id="walletId"
