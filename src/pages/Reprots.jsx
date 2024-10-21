@@ -92,8 +92,7 @@ const Reprots = ({onLogout}) => {
   const [Adformat, setAdFormat] = useState([
     "Push",
     "OnClick",
-    "In Page Push",
-    "Calender",
+    "In-Page",
   ]);
   const [subscription, setsubscription] = useState([
     "0-3 days",
@@ -108,7 +107,6 @@ const Reprots = ({onLogout}) => {
     "Windows",
     "iOS",
     "macOS",
-    "Linux",
     "Chrome OS",
     "Others",
   ]);
@@ -921,7 +919,7 @@ const Reprots = ({onLogout}) => {
                 </th>
                 <th>
                   <div className="tablesingledivvv">
-                    Campaings <ArrowDownIcon className="hhhh" />
+                    Campaigns <ArrowDownIcon className="hhhh" />
                   </div>
                 </th>
                 <th>
