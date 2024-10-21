@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import SideBar from "../components/SideBar";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
-import "../styles/Creative.css";
+import "../styles/creative.css";
 
 const Creatives = ({onLogout}) => {
   useEffect(() => {
