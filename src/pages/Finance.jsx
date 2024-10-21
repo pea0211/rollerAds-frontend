@@ -39,24 +39,21 @@ const Finance = ({onLogout}) => {
     accountNumber: "1057-1012-2149",
     accountHolder: "SAMSUL ADRIANSYAH"
   };
-  useEffect(() => {
-    // Lấy danh sách chiến dịch từ backend
-    const fetchUserTransactions = async () => {
-      try {
-        const response = await axios.get(`https://roller-ads-app-247fc36661ce.herokuapp.com/user-transaction/${email}`, {
-          withCredentials: true // Thêm thông tin xác thực vào yêu cầu
-        });
-        console.log(response.data);
-        setUserTransactions(response.data[0]);
-      } catch (error) {
-        console.error("Failed to fetch transactions:", error);
-      }
-    };
-    fetchUserTransactions();
-  }, []);
+  const fetchUserTransactions = async () => {
+    try {
+      const response = await axios.get(`https://roller-ads-app-247fc36661ce.herokuapp.com/user-transaction/${email}`, {
+        withCredentials: true // Thêm thông tin xác thực vào yêu cầu
+      });
+      console.log(response.data);
+      setUserTransactions(response.data[0]);
+    } catch (error) {
+      console.error("Failed to fetch transactions:", error);
+    }
+  };
 
   useEffect(() => {
     document.title = "Finance . RollerAds";
+    fetchUserTransactions();
   }, []);
 
   // Auto-generate transaction ID and payment note when user selects payment method or amount
@@ -90,6 +87,7 @@ const Finance = ({onLogout}) => {
           withCredentials: true // Thêm thông tin xác thực vào yêu cầu        
       });
       alert(response.data.message);
+      fetchUserTransactions();
       setActiveTab("History");
     } catch (error) {
       alert(error.response?.data?.message || "Payment failed.");

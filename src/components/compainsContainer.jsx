@@ -375,6 +375,7 @@ const CompainContainer = () => {
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
               </tr>
 
               {filteredData.map((campaign) => (
@@ -389,11 +390,11 @@ const CompainContainer = () => {
                   <td>
                     <p className="companinnammedooted">{campaign.campaignName}</p>
                   </td>
-                  <td className="srcipp">
-                    <div className="statuscontainer">
+                  <td>
+                    <div>
                       <p
                         mycuststylebar={campaign.status}
-                        className="mycompainlargetitlt"
+                        //className="mycompainlargetitlt"
                         style={{
                           backgroundColor: 
                             campaign.status === "pending" ? "#574500" :
@@ -413,22 +414,13 @@ const CompainContainer = () => {
                           borderRadius: "5px", // Tương tự, giá trị này là giống nhau
 
                           fontSize: "14px", // Giá trị fontSize là giống nhau
+                          width: "90px",
+                          textAlign: "center",
                         }}
                       >
                         {campaign.status}
                       </p>
-                      <div className="controlscotnaienr">
-                        <PlayIcon className="oio" />
-                        <PauseIcon className="oio" />
-                        <Link
-                          style={{ color: "unset" }}
-                          to={`/campaigns/${campaign.id}`}
-                        >
-                          <PencilIcon className="oio" />
-                        </Link>
-                        <PlusCircleIcon className="oio" />
-                        <ChartBarSquareIcon className="oio" />
-                      </div>
+                      
                     </div>
                   </td>
                   <td>{campaign.format}</td>
@@ -442,6 +434,16 @@ const CompainContainer = () => {
                   <td className="uyuyu">{campaign.dailyBudget}</td>
                   <td className="uyuyu">{campaign.totalBudget}</td>
                   <td typeof="date">{campaign.startDate}</td>
+                  <td>
+                    <button style={styles.editButton}>        
+                      <Link
+                        style={{ color: "unset" }}
+                        to={`/campaigns/${campaign.id}`}
+                      >
+                        Edit
+                      </Link>
+                    </button>
+                  </td>
                 </tr>
               ))}
             </tbody>

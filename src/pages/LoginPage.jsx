@@ -65,7 +65,8 @@ const LoginPage = ({ onLogin }) => {
           withCredentials: true // Thêm thông tin xác thực vào yêu cầu
         });
         alert(response.data.message);
-        setActiveTab("Login");
+        window.location.reload();
+        //setActiveTab("Login");
       } catch (error) {
         alert(error.response?.data?.message || "Registration failed.");
       }

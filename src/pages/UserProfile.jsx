@@ -80,7 +80,7 @@ const UserProfile = ({onLogout}) => {
       });
 
       alert(response.data.message); // Hiển thị thông báo thành công
-      
+      setPasswords({ oldPassword: "", newPassword: "", confirmPassword: "" });
     } catch (error) {
       console.error("Error changing password:", error);
       alert("Failed to change password. Please try again.");
