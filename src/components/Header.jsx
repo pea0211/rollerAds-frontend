@@ -100,9 +100,6 @@ const Header = ({ routename, onLogout }) => {
           <img src={WallatIcon} alt="" />
           <span>Balance: ${userBalance.balance}</span>
         </div>
-        <div className="volteContainer">
-          <CreditCardIcon className="creditcardionc" />
-        </div>
         <div className="userecontainer" onClick={toggleDropdown}>
           <UserIcon className="creditcardionc" />
           {isDropdownOpen && (
