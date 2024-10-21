@@ -122,7 +122,7 @@ const Creatives = ({onLogout}) => {
                     </div>
                     <img class="main-image" src="https://my.rollerads.com/crlib/4c7c/5a/75701c43c676dadd0b39b31a37_image.webp" alt="Ad Image 5"/>
                     <div class="creative-info">
-                        <p>Category: Technology</p>
+                        <p>Category: Software</p>
                         <p>Countries: Indonesia</p>
                         <p>Device: Desktop</p>
                     </div>
@@ -167,7 +167,7 @@ const Creatives = ({onLogout}) => {
                     <img class="main-image" src="https://my.rollerads.com/crlib/a0a7/b6/ee2660d91705fa411c76b69c3e_image.webp" alt="Ad Image 3"/>
                     <div class="creative-info">
                         <p>Category: Gambling</p>
-                        <p>Countries: Brazil</p>
+                        <p>Countries: Campuchia</p>
                         <p>Device: Mobile</p>
                     </div>
                     <div class="checkbox-container">
@@ -190,7 +190,7 @@ const Creatives = ({onLogout}) => {
                     <img class="main-image" src="https://my.rollerads.com/crlib/badd/4c/d9f8ada04caa93a7cf3c7695a5_image.webp" alt="Ad Image 4"/>
                     <div class="creative-info">
                         <p>Category: Finance</p>
-                        <p>Countries: India</p>
+                        <p>Countries: Indonesia</p>
                         <p>Device: Mobile</p>
                     </div>
                     <div class="checkbox-container">
@@ -212,8 +212,8 @@ const Creatives = ({onLogout}) => {
                     </div>
                     <img class="main-image" src="https://my.rollerads.com/crlib/a9e2/2d/ab1ad8848a3e84d9ded4f92786_image.webp" alt="Ad Image 5"/>
                     <div class="creative-info">
-                        <p>Category: Technology</p>
-                        <p>Countries: USA</p>
+                        <p>Category: Software</p>
+                        <p>Countries: Indonesia</p>
                         <p>Device: Desktop</p>
                     </div>
                     <div class="checkbox-container">
@@ -236,7 +236,7 @@ const Creatives = ({onLogout}) => {
                     <img class="main-image" src="https://my.rollerads.com/crlib/cbb2/a9/592c129efae6a9269b7fad7589_image.webp" alt="Ad Image 1"/>
                     <div class="creative-info">
                         <p>Category: Finance</p>
-                        <p>Countries: Spain</p>
+                        <p>Countries: Myanmar</p>
                         <p>Device: Mobile</p>
                     </div>
                     <div class="checkbox-container">
@@ -282,7 +282,7 @@ const Creatives = ({onLogout}) => {
                     <img class="main-image" src="https://my.rollerads.com/crlib/d178/66/7236374baeb33699b35712a048_image.webp" alt="Ad Image 3"/>
                     <div class="creative-info">
                         <p>Category: Gambling</p>
-                        <p>Countries: Brazil</p>
+                        <p>Countries: Viet Nam</p>
                         <p>Device: Mobile</p>
                     </div>
                     <div class="checkbox-container">
@@ -305,7 +305,7 @@ const Creatives = ({onLogout}) => {
                     <img class="main-image" src="https://my.rollerads.com/crlib/097e/65/8147beb7ee393849f186ff9ce4_image.webp" alt="Ad Image 4"/>
                     <div class="creative-info">
                         <p>Category: Finance</p>
-                        <p>Countries: India</p>
+                        <p>Countries: Indonesia</p>
                         <p>Device: Mobile</p>
                     </div>
                     <div class="checkbox-container">
@@ -327,8 +327,8 @@ const Creatives = ({onLogout}) => {
                     </div>
                     <img class="main-image" src="https://my.rollerads.com/crlib/44df/d3/71b7a4e49b0e18bfdd30b99c56_image.webp" alt="Ad Image 5"/>
                     <div class="creative-info">
-                        <p>Category: Technology</p>
-                        <p>Countries: USA</p>
+                        <p>Category: Software</p>
+                        <p>Countries: Singapore</p>
                         <p>Device: Desktop</p>
                     </div>
                     <div class="checkbox-container">
