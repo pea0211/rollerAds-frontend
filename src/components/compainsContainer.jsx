@@ -155,12 +155,6 @@ const CompainContainer = () => {
             <thead>
               <tr>
                 <th>
-                  <label class="yycontainer">
-                    <input type="checkbox" />
-                    <span class="checkmark"></span>
-                  </label>
-                </th>
-                <th>
                   <div className="tablesingledivvv">
                     ID <ArrowDownIcon className="hhhh" />
                   </div>
@@ -225,12 +219,6 @@ const CompainContainer = () => {
             <tbody className="ccccctablebody">
               <br />
               <tr className="myrrrrrrr">
-                <td>
-                  <label class="yycontainer">
-                    <input type="checkbox" />
-                    <span class="checkmark"></span>
-                  </label>
-                </td>
                 <td>
                   <input type="" className="seasrchid" placeholder="All" />
                 </td>
@@ -380,12 +368,6 @@ const CompainContainer = () => {
 
               {filteredData.map((campaign) => (
                 <tr key={campaign.id}>
-                  <td>
-                    <label class="yycontainer">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
-                  </td>
                   <td>{campaign.id}</td>
                   <td>
                     <p className="companinnammedooted">{campaign.campaignName}</p>
