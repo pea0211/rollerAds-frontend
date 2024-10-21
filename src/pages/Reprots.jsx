@@ -35,7 +35,7 @@ const Reprots = ({onLogout}) => {
   const [showCountries, setShowCountries] = useState(false);
   const [selectedDate, setSelectedDate] = useState("2024-02-01 / 2024-03-12");
   const [showDatePicker, setShowDatePicker] = useState(false);
-  const [filteredData, setFilteredData] = useState(excelData);
+  const [filteredData, setFilteredData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [rowsPerPage, setRowsPerPage] = useState(25);
   const [selectcomapinname, setselectcomainname] = useState(null);
@@ -53,6 +53,7 @@ const Reprots = ({onLogout}) => {
         });
         console.log(response.data);
         setExcelData(response.data[0]);
+        setFilteredData(response.data[0]); // Khởi tạo dữ liệu lọc
       } catch (error) {
         console.error("Failed to fetch campaigns:", error);
       }
