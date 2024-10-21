@@ -152,6 +152,190 @@ const Creatives = ({onLogout}) => {
                         <input type="checkbox"/>
                     </div>
                 </div>
+                <div class="creative-card">
+                    <div class="creative-header">
+                        <p>Impressions: 6.9M</p>
+                        <p>Clicks: 15K</p>
+                        <p>CTR: 0.21%</p>
+                    </div>
+                    <div class="creative-description">
+                        <p class="description">Slot Gacor Mudah Maxwin
+
+                            Member Baru Wede Terus Tiap Hari</p>
+                        <img class="logo" src="https://my.rollerads.com/crlib/ad3a/8c/8be968e32800d59da7c6dd2afd_icon.webp" alt="Logo"/>
+                    </div>
+                    <img class="main-image" src="https://my.rollerads.com/crlib/a0a7/b6/ee2660d91705fa411c76b69c3e_image.webp" alt="Ad Image 3"/>
+                    <div class="creative-info">
+                        <p>Category: Gambling</p>
+                        <p>Countries: Brazil</p>
+                        <p>Device: Mobile</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox"/>
+                    </div>
+                </div>
+
+                <div class="creative-card">
+                    <div class="creative-header">
+                        <p>Impressions: 82M</p>
+                        <p>Clicks: 14K</p>
+                        <p>CTR: 0.02%</p>
+                    </div>
+                    <div class="creative-description">
+                        <p class="description">⚡️Erhalte jetzt deine 300€!
+
+                            Genieße Spiele & große Gewinne</p>
+                        <img class="logo" src="https://my.rollerads.com/crlib/9bdc/98/c89a6fdfc48f107c7493548db1_icon.webp" alt="Logo"/>
+                    </div>
+                    <img class="main-image" src="https://my.rollerads.com/crlib/badd/4c/d9f8ada04caa93a7cf3c7695a5_image.webp" alt="Ad Image 4"/>
+                    <div class="creative-info">
+                        <p>Category: Finance</p>
+                        <p>Countries: India</p>
+                        <p>Device: Mobile</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox"/>
+                    </div>
+                </div>
+
+                <div class="creative-card">
+                    <div class="creative-header">
+                        <p>Impressions: 40M</p>
+                        <p>Clicks: 20K</p>
+                        <p>CTR: 0.05%</p>
+                    </div>
+                    <div class="creative-description">
+                        <p class="description">📩 Transacción bancaria
+
+                            Monto disponible: +955.00€</p>
+                        <img class="logo" src="https://my.rollerads.com/crlib/02d7/c2/612a4b77f46926a98b3979c1e7_icon.webp" alt="Logo"/>
+                    </div>
+                    <img class="main-image" src="https://my.rollerads.com/crlib/a9e2/2d/ab1ad8848a3e84d9ded4f92786_image.webp" alt="Ad Image 5"/>
+                    <div class="creative-info">
+                        <p>Category: Technology</p>
+                        <p>Countries: USA</p>
+                        <p>Device: Desktop</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox"/>
+                    </div>
+                </div>
+
+                 <div class="creative-card">
+                    <div class="creative-header">
+                        <p>Impressions: 24M</p>
+                        <p>Clicks: 15K</p>
+                        <p>CTR: 0.06%</p>
+                    </div>
+                    <div class="creative-description">
+                        <p class="description">(3) VIRUS sur votre téléphone !
+
+                            Cliquez pour supprimer</p>
+                        <img class="logo" src="https://my.rollerads.com/crlib/875e/4f/5ec1bc297c230cd201a762db39_icon.webp" alt="Logo"/>
+                    </div>
+                    <img class="main-image" src="https://my.rollerads.com/crlib/cbb2/a9/592c129efae6a9269b7fad7589_image.webp" alt="Ad Image 1"/>
+                    <div class="creative-info">
+                        <p>Category: Finance</p>
+                        <p>Countries: Spain</p>
+                        <p>Device: Mobile</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox"/>
+                    </div>
+                </div>
+
+                <div class="creative-card">
+                    <div class="creative-header">
+                        <p>Impressions: 50M</p>
+                        <p>Clicks: 15K</p>
+                        <p>CTR: 0.03%</p>
+                    </div>
+                    <div class="creative-description">
+                        <p class="description">Your best chance is at GemBet
+
+                            Get up to MYR 3,000 with Your First Deposits</p>
+                        <img class="logo" src="https://my.rollerads.com/crlib/aaee/85/18156c6ba1ec66d3ec0874615b_icon.webp" alt="Logo"/>
+                    </div>
+                    <img class="main-image" src="https://my.rollerads.com/crlib/3316/5d/d63bfa18d209442d3e1447e8d1_image.webp" alt="Ad Image 2"/>
+                    <div class="creative-info">
+                        <p>Category: Gambling</p>
+                        <p>Countries: Indonesia</p>
+                        <p>Device: Mobile</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox"/>
+                    </div>
+                </div>
+
+                <div class="creative-card">
+                    <div class="creative-header">
+                        <p>Impressions: 6.9M</p>
+                        <p>Clicks: 15K</p>
+                        <p>CTR: 0.21%</p>
+                    </div>
+                    <div class="creative-description">
+                        <p class="description">Casino Bonus For New Players! 
+
+                            Just Deposit And Get Up To 120% Reward</p>
+                        <img class="logo" src="https://my.rollerads.com/crlib/3ee3/31/e353a63b9ac5665b04e0dd1827_icon.webp" alt="Logo"/>
+                    </div>
+                    <img class="main-image" src="https://my.rollerads.com/crlib/d178/66/7236374baeb33699b35712a048_image.webp" alt="Ad Image 3"/>
+                    <div class="creative-info">
+                        <p>Category: Gambling</p>
+                        <p>Countries: Brazil</p>
+                        <p>Device: Mobile</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox"/>
+                    </div>
+                </div>
+
+                <div class="creative-card">
+                    <div class="creative-header">
+                        <p>Impressions: 82M</p>
+                        <p>Clicks: 14K</p>
+                        <p>CTR: 0.02%</p>
+                    </div>
+                    <div class="creative-description">
+                        <p class="description">Pohon8 | Situs Slot Trending
+
+                            Situs Baru, Sedang kasih2 duit, cobakan!</p>
+                        <img class="logo" src="https://my.rollerads.com/crlib/c78e/36/8be1b223dc021300e136f1ef40_icon.webp" alt="Logo"/>
+                    </div>
+                    <img class="main-image" src="https://my.rollerads.com/crlib/097e/65/8147beb7ee393849f186ff9ce4_image.webp" alt="Ad Image 4"/>
+                    <div class="creative-info">
+                        <p>Category: Finance</p>
+                        <p>Countries: India</p>
+                        <p>Device: Mobile</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox"/>
+                    </div>
+                </div>
+
+                <div class="creative-card">
+                    <div class="creative-header">
+                        <p>Impressions: 40M</p>
+                        <p>Clicks: 20K</p>
+                        <p>CTR: 0.05%</p>
+                    </div>
+                    <div class="creative-description">
+                        <p class="description">⛔️ ALERTE VIRUS ⛔️
+
+                            Virus (6) trouvés. Nettoie maintenant!</p>
+                        <img class="logo" src="https://my.rollerads.com/crlib/561b/e8/00c92b3c281402bca44c867a90_icon.webp" alt="Logo"/>
+                    </div>
+                    <img class="main-image" src="https://my.rollerads.com/crlib/44df/d3/71b7a4e49b0e18bfdd30b99c56_image.webp" alt="Ad Image 5"/>
+                    <div class="creative-info">
+                        <p>Category: Technology</p>
+                        <p>Countries: USA</p>
+                        <p>Device: Desktop</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox"/>
+                    </div>
+                </div>
+
             </div>
         </div>      
         <div class="filters">
