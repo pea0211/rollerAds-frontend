@@ -46,8 +46,8 @@ const CompainContainer = () => {
           withCredentials: true // Thêm thông tin xác thực vào yêu cầu
         });
         console.log(response.data);
-        setCampaignsData(response.data);
-        setFilteredData(response.data); // Khởi tạo dữ liệu lọc
+        setCampaignsData(response.data[0]);
+        setFilteredData(response.data[0]); // Khởi tạo dữ liệu lọc
       } catch (error) {
         console.error("Failed to fetch users:", error);
       }

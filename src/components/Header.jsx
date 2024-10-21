@@ -28,7 +28,7 @@ const Header = ({ routename, onLogout }) => {
         const response = await axios.get(`https://roller-ads-app-247fc36661ce.herokuapp.com/user-balance/${userEmail}`, {
           withCredentials: true // Thêm thông tin xác thực vào yêu cầu
         });
-        setUserBalance(response.data);
+        setUserBalance(response.data[0]);
         console.log(response.data);
       } catch (error) {
         console.error("Error fetching user data:", error);

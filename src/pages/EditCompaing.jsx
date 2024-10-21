@@ -35,29 +35,29 @@ const EditCompaing = ({onLogout}) => {
         const response = await axios.get(`https://roller-ads-app-247fc36661ce.herokuapp.com/campaign/${id}`, {
           withCredentials: true // Thêm thông tin xác thực vào yêu cầu
         });
-        setCampaign_data(response.data);
+        setCampaign_data(response.data[0]);
         console.log(response.data);
-        setFormat(response.data.format);
-        setBidModel(response.data.bidModel);
-        setPresets(response.data.presets);
-        setCampaignName(response.data.campaignName);
-        setTargetURL(response.data.targetURL);
-        setIcon(response.data.icon);
-        setImage(response.data.image);
-        setTitle(response.data.title);
-        setDescription(response.data.description);
-        setSelectedCountry(response.data.selectedCountry);
-        setDailyBudget(response.data.dailyBudget);
-        setTotalBudget(response.data.totalBudget);
+        setFormat(response.data[0].format);
+        setBidModel(response.data[0].bidModel);
+        setPresets(response.data[0].presets);
+        setCampaignName(response.data[0].campaignName);
+        setTargetURL(response.data[0].targetURL);
+        setIcon(response.data[0].icon);
+        setImage(response.data[0].image);
+        setTitle(response.data[0].title);
+        setDescription(response.data[0].description);
+        setSelectedCountry(response.data[0].selectedCountry);
+        setDailyBudget(response.data[0].dailyBudget);
+        setTotalBudget(response.data[0].totalBudget);
         if (response.data.selectedDevices) {
           // Ensure selectedDevices is a string before splitting
-          const devicesArray = typeof response.data.selectedDevices === 'string' ? response.data.selectedDevices.split(',') : [];
+          const devicesArray = typeof response.data[0].selectedDevices === 'string' ? response.data[0].selectedDevices.split(',') : [];
           setSelectedDevices(devicesArray);
           setDeviceInputValue(devicesArray.join(" "));
         }
         if (response.data.selectedPlatforms) {
           // Ensure selectedPlatforms is a string before splitting
-          const platformsArray = typeof response.data.selectedPlatforms === 'string' ? response.data.selectedPlatforms.split(',') : [];
+          const platformsArray = typeof response.data[0].selectedPlatforms === 'string' ? response.data[0].selectedPlatforms.split(',') : [];
           setSelectedPlatforms(platformsArray);
           setPlatformInputValue(platformsArray.join(" "));
         }

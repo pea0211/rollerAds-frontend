@@ -13,7 +13,7 @@ const AdminUser = ({onLogout}) => {
           withCredentials: true // Thêm thông tin xác thực vào yêu cầu
         }); 
         console.log(response.data);
-        setUsers(response.data);
+        setUsers(response.data[0]);
       } catch (error) {
         console.error("Failed to fetch users:", error);
       }

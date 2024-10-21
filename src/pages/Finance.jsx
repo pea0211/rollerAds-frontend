@@ -47,7 +47,7 @@ const Finance = ({onLogout}) => {
           withCredentials: true // Thêm thông tin xác thực vào yêu cầu
         });
         console.log(response.data);
-        setUserTransactions(response.data);
+        setUserTransactions(response.data[0]);
       } catch (error) {
         console.error("Failed to fetch transactions:", error);
       }

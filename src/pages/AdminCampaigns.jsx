@@ -15,7 +15,7 @@ const AdminCampaigns = ({onLogout}) => {
         const response = await axios.get("https://roller-ads-app-247fc36661ce.herokuapp.com/admin_campaign", {
           withCredentials: true // Thêm thông tin xác thực vào yêu cầu
         });
-        setCampaigns(response.data);
+        setCampaigns(response.data[0]);
         console.log(response.data);
       } catch (error) {
         console.error("Failed to fetch campaigns:", error);
