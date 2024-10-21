@@ -781,7 +781,7 @@ const Reprots = ({onLogout}) => {
                 value={selectcomapinname}
                 placeholder="Campaigns"
                 readOnly
-                onClick={handletogglecompaincontainer}
+                //onClick={handletogglecompaincontainer}
               />
             </div>
             {/* <svg xmlns="http://www.w3.org/2000/svg" width={10} height={10} style={{ position: 'relative', fill: '#4b474e', left: '-29px' }} onClick={() => setselectcomainname(null)}>
@@ -793,7 +793,7 @@ const Reprots = ({onLogout}) => {
                   <div
                     className="countriescontainer"
                     key={i}
-                    onClick={() => handleselectcompaingname(item)}
+                    //onClick={() => handleselectcompaingname(item)}
                   >
                     {item}
                   </div>
@@ -811,7 +811,7 @@ const Reprots = ({onLogout}) => {
                 value={selectedCountry}
                 placeholder="Countries"
                 readOnly
-                onClick={handleToggleCountries}
+                //onClick={handleToggleCountries}
               />
             </div>
             {showCountries && (
@@ -820,7 +820,7 @@ const Reprots = ({onLogout}) => {
                   <div
                     className="countriescontainer"
                     key={i}
-                    onClick={() => handleSelectCountry(item)}
+                    //onClick={() => handleSelectCountry(item)}
                   >
                     {item}
                   </div>
