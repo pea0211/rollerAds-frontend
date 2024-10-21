@@ -68,6 +68,7 @@ const Finance = ({onLogout}) => {
     document.title = "Finance . RollerAds";
     fetchUserTransactions();
     fetchUserWalletId();
+    
   }, []);
 
   // Auto-generate transaction ID and payment note when user selects payment method or amount
@@ -114,6 +115,7 @@ const Finance = ({onLogout}) => {
   };
 
   return (
+    
     <div className="financepagehere">
       <Header routename="Finance" onLogout={onLogout} />
       <div style={{ width: "100%", display: "flex", justifyItems: "center" }}>
