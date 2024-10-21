@@ -114,6 +114,7 @@ const Reprots = ({onLogout}) => {
   ]);
   // const [currentRows, setCurrentRows] = useState([]);
   // Function to convert the Excel data to an array of report objects
+  /*
   function createReportArray(data) {
     const reportArray = [];
     const headers = data[0]; // Assuming the first row contains headers
@@ -135,9 +136,9 @@ const Reprots = ({onLogout}) => {
 
     return reportArray;
   }
-
+  */
   // Create array of report objects
-  const reports = createReportArray(excelData);
+  const reports = excelData;
 
   // Handle toggling of saved reports dropdown
   const handleToggleSavedReports = () => {
