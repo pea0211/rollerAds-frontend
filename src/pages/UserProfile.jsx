@@ -36,6 +36,7 @@ const UserProfile = ({onLogout}) => {
         const response = await axios.get(`https://roller-ads-app-247fc36661ce.herokuapp.com/user-profile/${userEmail}`, {
           withCredentials: true // Thêm thông tin xác thực vào yêu cầu
         });
+        console.log(response.data);
         setUserData(response.data);
       } catch (error) {
         console.error("Error fetching user data:", error);

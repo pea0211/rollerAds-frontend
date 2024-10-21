@@ -29,6 +29,7 @@ const Header = ({ routename, onLogout }) => {
           withCredentials: true // Thêm thông tin xác thực vào yêu cầu
         });
         setUserBalance(response.data);
+        console.log(response.data);
       } catch (error) {
         console.error("Error fetching user data:", error);
       }

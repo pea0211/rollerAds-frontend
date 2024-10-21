@@ -15,6 +15,7 @@ const AdminTransactions = ({onLogout}) => {
         const response = await axios.get("https://roller-ads-app-247fc36661ce.herokuapp.com/admin_transaction", {
           withCredentials: true // Thêm thông tin xác thực vào yêu cầu
         });
+        console.log(response.data);
         setTransactions(response.data);
       } catch (error) {
         console.error("Failed to fetch transactions:", error);

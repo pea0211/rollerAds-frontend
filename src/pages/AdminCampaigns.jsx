@@ -16,6 +16,7 @@ const AdminCampaigns = ({onLogout}) => {
           withCredentials: true // Thêm thông tin xác thực vào yêu cầu
         });
         setCampaigns(response.data);
+        console.log(response.data);
       } catch (error) {
         console.error("Failed to fetch campaigns:", error);
       }

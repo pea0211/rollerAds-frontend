@@ -46,6 +46,7 @@ const Finance = ({onLogout}) => {
         const response = await axios.get(`https://roller-ads-app-247fc36661ce.herokuapp.com/user-transaction/${email}`, {
           withCredentials: true // Thêm thông tin xác thực vào yêu cầu
         });
+        console.log(response.data);
         setUserTransactions(response.data);
       } catch (error) {
         console.error("Failed to fetch transactions:", error);
