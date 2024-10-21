@@ -138,11 +138,6 @@ const LoginPage = ({ onLogin }) => {
             setActiveTab={setActiveTab}
             tabName="Sign Up"
           />
-          <Tab
-            activeTab={activeTab}
-            setActiveTab={setActiveTab}
-            tabName="Forgot Password"
-          />
         </div>
       </div>
       <div className="login-form-container">
