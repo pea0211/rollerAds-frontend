@@ -32,7 +32,7 @@ const Finance = ({onLogout}) => {
   const [paymentNote, setPaymentNote] = useState('');
   const email = localStorage.getItem("userEmail");
   const [userTransactions, setUserTransactions] = useState([]);
-  const [userWalletId, setUserWalletId] = useState('');
+  //const [userWalletId, setUserWalletId] = useState('');
 
   const tronWalletAddress = "TEPb7r4uNSwZfVkZMVtddJvMCGe8ZTCBYw";
   const bankDetails = {
@@ -58,7 +58,7 @@ const Finance = ({onLogout}) => {
         withCredentials: true // Thêm thông tin xác thực vào yêu cầu
       });
       console.log(response.data);
-      setUserWalletId(response.data[0]);
+      setWalletId(response.data[0]);
     } catch (error) {
       console.error("Failed to fetch user walletId:", error);
     }
