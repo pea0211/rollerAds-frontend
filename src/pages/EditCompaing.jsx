@@ -42,8 +42,8 @@ const EditCompaing = ({onLogout}) => {
         setPresets(response.data[0].presets);
         setCampaignName(response.data[0].campaignName);
         setTargetURL(response.data[0].targetURL);
-        setIcon(response.data[0].icon);
-        setImage(response.data[0].image);
+        setIconURL(response.data[0].icon);
+        setImageURL(response.data[0].image);
         setTitle(response.data[0].title);
         setDescription(response.data[0].description);
         setSelectedCountry(response.data[0].selectedCountry);
@@ -449,7 +449,7 @@ const EditCompaing = ({onLogout}) => {
                 <div>
                   <label htmlFor="iconUpload" className="image-label">
                   {icon ? (
-                    <img src={iconURL} alt="Icon" className="uploaded-image" style={{ width: "70px"}}/>
+                    <img src={iconURL} alt="Icon" className="uploaded-image" style={{ maxWidth: "70px"}}/>
                   ) : (
                     <>
                       <p style={{ fontSize:"14px"}}>Icon</p>
@@ -468,7 +468,7 @@ const EditCompaing = ({onLogout}) => {
                 <div className="secondcontainerimgads">
                   <label htmlFor="imageUpload" className="image-label" >
                     {image ? (
-                      <img src={imageURL} alt="Image" className="uploaded-image" style={{ height: "90px"}}/>
+                      <img src={imageURL} alt="Image" className="uploaded-image" style={{ maxHeight: "90px"}}/>
                     ) : (
                       <>
                         <p>Image</p>
