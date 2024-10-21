@@ -80,12 +80,10 @@ const Reprots = ({onLogout}) => {
   };
   const [campains, setcomapins] = useState([
     "Creatives",
-    "Campaings",
+    "Campaigns",
     "Ad Format",
     "Day",
     "Hour",
-    "Zone",
-    "Feed",
     "Platform",
     "Subscription age",
   ]);
