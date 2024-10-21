@@ -101,8 +101,12 @@ const Finance = ({onLogout}) => {
           withCredentials: true // Thêm thông tin xác thực vào yêu cầu        
       });
       alert(response.data.message);
+      setAmount('');
+      //setPaymentMethod('crypto');
+      setTransactionId('');
+      setPaymentNote('');
       fetchUserTransactions();
-      setActiveTab("History");
+      setActiveTab("History");     
     } catch (error) {
       alert(error.response?.data?.message || "Payment failed.");
     }
