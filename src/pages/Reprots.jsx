@@ -960,7 +960,7 @@ const Reprots = ({onLogout}) => {
                   <td>{report.clicks}</td>
                   <td>${report.cost}</td>
                   <td>{report.bid}</td>
-                  <td>{(report.clicks / report.impressions).toFixed(2)}</td>
+                  <td>{report.impressions === 0 ? '-' : (report.clicks / report.impressions).toFixed(2)}</td>
                 </tr>
               ))}
               {/* <tr className="on">
