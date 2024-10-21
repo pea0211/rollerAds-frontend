@@ -542,4 +542,15 @@ const CompainContainer = () => {
   );
 };
 
+const styles = {
+  editButton: {
+    backgroundColor: '#007bff',
+    border: 'none',
+    padding: '6px 12px',
+    borderRadius: '4px',
+    color: '#fff',
+    cursor: 'pointer',
+  },
+}
+
 export default CompainContainer;
