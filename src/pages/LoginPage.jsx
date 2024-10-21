@@ -348,12 +348,7 @@ const LoginPage = ({ onLogin }) => {
             </div>
           </section>
         )}
-        {activeTab === "Forgot Password" && (
-          <section className="forgot-password-section">
-            {/* Add Forgot Password form here */}
-            <h3>Forgot Password Form</h3>
-          </section>
-        )}
+        
       </div>
     </div>
   );
