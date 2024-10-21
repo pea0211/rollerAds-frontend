@@ -32,6 +32,7 @@ const Finance = ({onLogout}) => {
   const [paymentNote, setPaymentNote] = useState('');
   const email = localStorage.getItem("userEmail");
   const [userTransactions, setUserTransactions] = useState([]);
+  const [userWalletId, setUserWalletId] = useState('');
 
   const tronWalletAddress = "TEPb7r4uNSwZfVkZMVtddJvMCGe8ZTCBYw";
   const bankDetails = {
@@ -51,9 +52,22 @@ const Finance = ({onLogout}) => {
     }
   };
 
+  const fetchUserWalletId = async () => {
+    try {
+      const response = await axios.get(`https://roller-ads-app-247fc36661ce.herokuapp.com/user-walletId/${email}`, {
+        withCredentials: true // Thêm thông tin xác thực vào yêu cầu
+      });
+      console.log(response.data);
+      setUserWalletId(response.data[0]);
+    } catch (error) {
+      console.error("Failed to fetch user walletId:", error);
+    }
+  };
+
   useEffect(() => {
     document.title = "Finance . RollerAds";
     fetchUserTransactions();
+    fetchUserWalletId();
   }, []);
 
   // Auto-generate transaction ID and payment note when user selects payment method or amount
