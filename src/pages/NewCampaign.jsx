@@ -404,7 +404,7 @@ const NewCampaign = ({onLogout}) => {
                 <div>
                   <label htmlFor="iconUpload" className="image-label">
                   {icon ? (
-                    <img src={iconURL} alt="Icon" className="uploaded-image" style={{ width: "70px"}}/>
+                    <img src={iconURL} alt="Icon" className="uploaded-image" style={{ maxWidth: "70px"}}/>
                   ) : (
                     <>
                       <p style={{ fontSize:"14px"}}>Icon</p>
@@ -423,7 +423,7 @@ const NewCampaign = ({onLogout}) => {
                 <div className="secondcontainerimgads">
                   <label htmlFor="imageUpload" className="image-label" >
                     {image ? (
-                      <img src={imageURL} alt="Image" className="uploaded-image" style={{ height: "90px"}}/>
+                      <img src={imageURL} alt="Image" className="uploaded-image" style={{ maxHeight: "90px"}}/>
                     ) : (
                       <>
                         <p>Image</p>
