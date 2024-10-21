@@ -40,6 +40,7 @@ const Reprots = ({onLogout}) => {
   const [selectcomapinname, setselectcomainname] = useState(null);
   const [selectsub, setSub] = useState("");
   const [excelData, setExcelData] = useState([]);
+  const [compainsnames, setCompainsnames] = useState([]);
 
   useEffect(() => {
     // Lấy danh sách người dùng từ backend
@@ -778,7 +779,7 @@ const Reprots = ({onLogout}) => {
               <input
                 type="text"
                 value={selectcomapinname}
-                placeholder="Campaings"
+                placeholder="Campaigns"
                 readOnly
                 onClick={handletogglecompaincontainer}
               />
@@ -799,16 +800,6 @@ const Reprots = ({onLogout}) => {
                 ))}
               </div>
             )}
-          </div>{" "}
-          <div className="reportsdivItem">
-            <div>
-              <input type="text" value="" placeholder="Feeds" />
-            </div>
-          </div>{" "}
-          <div className="reportsdivItem">
-            <div>
-              <input type="text" value="" placeholder="Zones" />
-            </div>
           </div>
           <div className="reportsdivItem">
             <div className="workkkk">
