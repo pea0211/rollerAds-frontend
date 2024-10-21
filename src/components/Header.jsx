@@ -96,7 +96,7 @@ const Header = ({ routename, onLogout }) => {
       </div>
       <div className="headerRightcontaienr">
         <div className="timecontainer">{currentTime}  (UTC)</div>
-        <div className="balanceContainer" onClick={handleFinanceClick}>
+        <div className="balanceContainer" onClick={handleFinanceClick} style={{ cursor: "pointer" }}>
           <img src={WallatIcon} alt="" />
           <span>Balance: ${userBalance.balance}</span>
         </div>
