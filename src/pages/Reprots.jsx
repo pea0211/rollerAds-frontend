@@ -6,7 +6,6 @@ import TableEYEIcon from "../assets/tableeye.svg";
 import DownlaodIcon from "../assets/download.svg";
 import RefreshSVG from "../assets/refresh.svg";
 import EraseImg from "../assets/erase.svg";
-import CompainContainer from "./components/compainsContainer";
 import axios from "axios";
 
 import {
