@@ -200,9 +200,9 @@ const AdminCampaigns = ({onLogout}) => {
                       <br></br>
                       <p><strong>Target URL:</strong> {campaign.targetURL}</p>
                       <br></br>
-                      <p><strong>Icon:</strong> {campaign.icon}</p>
+                      <p><strong>Icon:</strong> <img src={campaign.icon} alt="Icon" className="uploaded-image" style={{ maxHeight: "70px"}}/></p>
                       <br></br>
-                      <p><strong>Image:</strong> {campaign.image}</p>
+                      <p><strong>Image:</strong> <img src={campaign.image} alt="Image" className="uploaded-image" style={{ maxHeight: "70px"}}/></p>
                       <br></br>
                       <p><strong>Title:</strong> {campaign.title}</p>
                       <br></br>
