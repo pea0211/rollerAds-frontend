@@ -12,7 +12,7 @@ import NewCampaign from "./pages/NewCampaign.jsx";
 import SideBar from "./components/SideBar.jsx";
 import EditCompaing from "./pages/EditCompaing.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AdminUser from "./pages/AdminUser.jsx";
 import AdminSideBar from "./components/AdminSideBar.jsx";
 import UserProfile from "./pages/UserProfile.jsx";
