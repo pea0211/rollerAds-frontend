@@ -50,8 +50,27 @@ const EditCompaing = ({onLogout}) => {
         setDailyBudget(response.data[0].dailyBudget);
         setTotalBudget(response.data[0].totalBudget);
         if (response.data[0].selectedDevices) {
+          // Ensure selectedDevices is a string before processing
+          const selected = response.data[0].selectedDevices;
+          const devicesArray = typeof selected === 'string' 
+              ? (selected.includes(',') ? selected.split(',') : [selected]) 
+              : [];
+          setSelectedDevices(devicesArray);
+          setDeviceInputValue(devicesArray.join(" "));
+        }
+        if (response.data[0].selectedPlatforms) {
+          // Ensure selectedDevices is a string before processing
+          const selected = response.data[0].selectedPlatforms;
+          const PlatformArray = typeof selected === 'string' 
+              ? (selected.includes(',') ? selected.split(',') : [selected]) 
+              : [];
+          setSelectedPlatforms(PlatformArray);
+          setPlatformInputValue(PlatformArray.join(" "));
+        }
+        /*
+        if (response.data[0].selectedDevices) {
           // Ensure selectedDevices is a string before splitting
-          const devicesArray = typeof response.data.selectedDevices === 'string' ? response.data[0].selectedDevices.split(',') : [];
+          const devicesArray = typeof response.data[0].selectedDevices === 'string' ? response.data[0].selectedDevices.split(',') : [];
           setSelectedDevices(devicesArray);
           setDeviceInputValue(devicesArray.join(" "));
         }
@@ -61,6 +80,7 @@ const EditCompaing = ({onLogout}) => {
           setSelectedPlatforms(platformsArray);
           setPlatformInputValue(platformsArray.join(" "));
         }
+          */
       } catch (error) {
         console.error("Error fetching campaign data:", error);
       }
