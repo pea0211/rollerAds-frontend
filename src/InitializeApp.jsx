@@ -25,9 +25,23 @@ const InitializeApp = () => {
   const [role, setRole] = useState(""); // Quản lý vai trò của người dùng
   const navigate = useNavigate(); // Điều hướng dựa trên vai trò
 
+  // Kiểm tra trạng thái đăng nhập khi khởi chạy ứng dụng
+  useEffect(() => {
+    const savedRole = localStorage.getItem("role"); // Lấy vai trò đã lưu từ localStorage
+    const loggedInStatus = localStorage.getItem("isLoggedIn"); // Lấy trạng thái đăng nhập từ localStorage
+
+    if (loggedInStatus === "true" && savedRole) {
+      setIsLoggedIn(true);
+      setRole(savedRole);
+    }
+  }, []);
+
   const handleLogin = (userRole) => {
     setIsLoggedIn(true); // Cập nhật trạng thái đăng nhập
     setRole(userRole); // Lưu vai trò của người dùng
+    localStorage.setItem("isLoggedIn", "true"); // Lưu trạng thái đăng nhập vào localStorage
+    localStorage.setItem("role", userRole); // Lưu vai trò vào localStorage
+
     if (userRole === "admin") {
       navigate("/admin/users"); // Điều hướng đến trang admin
     } else {
@@ -40,6 +54,8 @@ const InitializeApp = () => {
     setIsLoggedIn(false); // Đặt lại trạng thái đăng nhập
     setRole(""); // Xóa vai trò
     localStorage.removeItem("userEmail"); // Nếu bạn lưu thông tin trong localStorage, xóa nó
+    localStorage.removeItem("isLoggedIn"); // Xóa trạng thái đăng nhập khỏi localStorage
+    localStorage.removeItem("role"); // Xóa vai trò khỏi localStorage
     navigate("/"); // Điều hướng về trang đăng nhập
   };
 
