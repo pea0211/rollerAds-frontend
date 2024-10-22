@@ -452,8 +452,7 @@ const EditCompaing = ({onLogout}) => {
                     <img src={iconURL} alt="Icon" className="uploaded-image" style={{ maxWidth: "70px"}}/>
                   ) : (
                     <>
-                      <p style={{ fontSize:"14px"}}>Icon</p>
-                      <p className="specilstyle">192 x 192 px jpg.png,webp 2Mb max</p>
+                      <img src={iconURL} alt="Icon" className="uploaded-image" style={{ maxWidth: "70px"}}/>
                     </>
                   )}
                 </label>
@@ -471,8 +470,7 @@ const EditCompaing = ({onLogout}) => {
                       <img src={imageURL} alt="Image" className="uploaded-image" style={{ maxHeight: "90px"}}/>
                     ) : (
                       <>
-                        <p>Image</p>
-                        <p className="specilstyle">360 x 240 px jpg.png,webp 2Mb max</p>
+                        <img src={imageURL} alt="Image" className="uploaded-image" style={{ maxHeight: "90px"}}/>
                       </>
                     )}
                   </label>
