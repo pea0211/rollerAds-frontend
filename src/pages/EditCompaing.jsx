@@ -319,12 +319,12 @@ const EditCompaing = ({onLogout}) => {
                 <label style={{ marginLeft: "20px" }}>
                   <input
                     type="radio"
-                    value="In-page"
-                    checked={format === "In-page"}
+                    value="In-Page"
+                    checked={format === "In-Page"}
                     onChange={handleFormatChange}
                     style={{ marginRight: "5px" }}
                   />
-                  In-page
+                  In-Page
                 </label>                 
                 </div>
               </div>
