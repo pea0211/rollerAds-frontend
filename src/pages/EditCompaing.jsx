@@ -448,11 +448,12 @@ const EditCompaing = ({onLogout}) => {
               <div className="imagescontainermain">
                 <div>
                   <label htmlFor="iconUpload" className="image-label">
-                  {icon ? (
+                  {iconURL ? (
                     <img src={iconURL} alt="Icon" className="uploaded-image" style={{ maxWidth: "70px"}}/>
                   ) : (
                     <>
-                      <img src={iconURL} alt="Icon" className="uploaded-image" style={{ maxWidth: "70px"}}/>
+                      <p style={{ fontSize:"14px"}}>Icon</p>
+                      <p className="specilstyle">192 x 192 px jpg.png,webp 2Mb max</p>
                     </>
                   )}
                 </label>
@@ -466,11 +467,12 @@ const EditCompaing = ({onLogout}) => {
                 </div>
                 <div className="secondcontainerimgads">
                   <label htmlFor="imageUpload" className="image-label" >
-                    {image ? (
+                    {imageURL ? (
                       <img src={imageURL} alt="Image" className="uploaded-image" style={{ maxHeight: "90px"}}/>
                     ) : (
                       <>
-                        <img src={imageURL} alt="Image" className="uploaded-image" style={{ maxHeight: "90px"}}/>
+                        <p>Image</p>
+                        <p className="specilstyle">360 x 240 px jpg.png,webp 2Mb max</p>
                       </>
                     )}
                   </label>
